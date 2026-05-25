@@ -2,6 +2,12 @@
 
 Exploratory Data Analysis and Feature Engineering on the Pima Indians Diabetes Dataset — uncovering the key health factors that predict diabetes using Python, Pandas, and Seaborn.
 
+[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://python.org)
+[![Pandas](https://img.shields.io/badge/Pandas-1.x-darkblue?logo=pandas)](https://pandas.pydata.org)
+[![NumPy](https://img.shields.io/badge/NumPy-1.x-blue?logo=numpy)](https://numpy.org)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-3.x-orange)](https://matplotlib.org)
+[![Seaborn](https://img.shields.io/badge/Seaborn-0.x-teal)](https://seaborn.pydata.org)
+[![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter)](https://jupyter.org)
 
 ## 📌 Project Overview
 
@@ -36,6 +42,29 @@ The Age_Group bivariate chart shows middle-aged patients have the highest diabet
 **5. Blood Pressure has almost no predictive value alone**
 
 BloodPressure showed near-zero correlation with DiabetesPedigreeFunction and heavily overlapping distributions between diabetic and non-diabetic groups. It should be deprioritized in modeling unless combined with other features as an interaction term.
+
+---
+
+## 📊 Visual Highlights
+
+### Feature Correlation Matrix
+![Correlation Heatmap](images/correlation_heatmap.png)
+> Glucose shows the strongest correlation with diabetes outcome (0.49).
+> Age and Pregnancies are moderately correlated (0.54).
+
+---
+
+### Diabetes Prevalence in Dataset
+![Target Distribution](images/target_distribution.png)
+> Dataset is slightly imbalanced — 65% non-diabetic vs 35% diabetic.
+> Class imbalance must be handled before modeling.
+
+---
+
+### Key Health Indicators by Diabetes Status
+![Features vs Outcome](images/features_vs_outcome.png)
+> Glucose and BMI show the clearest separation between diabetic
+> and non-diabetic patients.
 
 ## 📊 Analysis Structure
 
