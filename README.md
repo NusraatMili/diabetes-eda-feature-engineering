@@ -1,6 +1,6 @@
 ## 🩺 Diabetes EDA & Feature Engineering
 
-Exploratory Data Analysis and Feature Engineering on the Pima Indians Diabetes Dataset — uncovering the key health factors that predict diabetes using Python, Pandas, and Seaborn.
+Exploratory Data Analysis and Feature Engineering on the Pima Indians Diabetes Dataset - uncovering the key health factors that predict diabetes using Python, Pandas, and Seaborn.
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://python.org)
 [![Pandas](https://img.shields.io/badge/Pandas-1.x-darkblue?logo=pandas)](https://pandas.pydata.org)
@@ -14,7 +14,7 @@ Exploratory Data Analysis and Feature Engineering on the Pima Indians Diabetes D
 **Dataset :** Pima Indians Diabetes Dataset  
 **Source :** Kaggle  
 **Records :** 768 patients × 9 features  
-**Target :** Outcome — 1 = Has Diabetes, 0 = No Diabetes  
+**Target :** Outcome - 1 = Has Diabetes, 0 = No Diabetes  
 **Tools :** Python, Pandas, NumPy, Matplotlib, Seaborn
 
 **Business Question:** What health factors determine whether a patient has diabetes?
@@ -25,7 +25,7 @@ Exploratory Data Analysis and Feature Engineering on the Pima Indians Diabetes D
 
 **1. Glucose is the single strongest predictor of diabetes**
 
-Glucose correlates with Outcome at 0.49 — the highest of any feature in the dataset. Patients with Glucose above 140 mg/dL have a diabetes rate nearly 2× the dataset average of 34.9%. If a clinician could only check one measurement, glucose would be it.
+Glucose correlates with Outcome at 0.49 - the highest of any feature in the dataset. Patients with Glucose above 140 mg/dL have a diabetes rate nearly 2× the dataset average of 34.9%. If a clinician could only check one measurement, glucose would be it.
 
 **2. Obesity dramatically increases diabetes risk**
 
@@ -33,11 +33,11 @@ Obese patients (BMI > 30) have the highest diabetes rate among all weight catego
 
 **3. Middle-aged patients (35–60) are the highest-risk age group**
 
-The Age_Group bivariate chart shows middle-aged patients have the highest diabetes rate — higher than both adults and seniors. Diabetic patients skew toward older ages in the pairplot, consistent with Age's moderate correlation with Outcome.
+The Age_Group bivariate chart shows middle-aged patients have the highest diabetes rate - higher than both adults and seniors. Diabetic patients skew toward older ages in the pairplot, consistent with Age's moderate correlation with Outcome.
 
 **4. Insulin data is severely limited but still informative**
 
-48.7% of Insulin values were coded as zero (missing), making it the least reliable raw feature. However, diabetic patients show a higher Insulin median in boxplot analysis — consistent with insulin resistance. With better data collection, Insulin could become a stronger predictor.
+48.7% of Insulin values were coded as zero (missing), making it the least reliable raw feature. However, diabetic patients show a higher Insulin median in boxplot analysis - consistent with insulin resistance. With better data collection, Insulin could become a stronger predictor.
 
 **5. Blood Pressure has almost no predictive value alone**
 
@@ -56,7 +56,7 @@ BloodPressure showed near-zero correlation with DiabetesPedigreeFunction and hea
 
 ### Diabetes Prevalence in Dataset
 ![Target Distribution](images/target_distribution.png)
-> Dataset is slightly imbalanced — 65% non-diabetic vs 35% diabetic.
+> Dataset is slightly imbalanced - 65% non-diabetic vs 35% diabetic.
 > Class imbalance must be handled before modeling.
 
 ---
@@ -68,21 +68,21 @@ BloodPressure showed near-zero correlation with DiabetesPedigreeFunction and hea
 
 ## 📊 Analysis Structure
 
-Section 1 — Dataset Overview
+Section 1 - Dataset Overview
 
-Section 2 — Data Quality Audit
+Section 2 - Data Quality Audit
 
-Section 3 — Cleaning Pipeline
+Section 3 - Cleaning Pipeline
 
-Section 4 — Univariate Analysis
+Section 4 - Univariate Analysis
 
-Section 5 — Bivariate Analysis
+Section 5 - Bivariate Analysis
 
-Section 6 — Multivariate Analysis
+Section 6 - Multivariate Analysis
 
-Section 7 — Key Findings
+Section 7 - Key Findings
 
-Section 8 — Next Steps
+Section 8 - Next Steps
 
 ## 🔧 Feature Engineering
 Three new features were created and validated against the target:
@@ -115,11 +115,11 @@ Feature correlation matrix	| Heatmap	| Glucose–Outcome: 0.49, Age–Pregnancie
 Pairwise relationships	| Pairplot |	Glucose separates diabetic/non-diabetic most clearly
 
 ## 🚀 Next Steps
-**- Interaction feature** — create `Glucose × BMI` as a combined metabolic risk score
+**- Interaction feature** - create `Glucose × BMI` as a combined metabolic risk score
 
-**- Predictive modeling** — train Logistic Regression and Random Forest; expect Glucose, BMI, and Age as top 3 important features
+**- Predictive modeling** - train Logistic Regression and Random Forest; expect Glucose, BMI, and Age as top 3 important features
 
-**- Handle class imbalance** — use `class\_weight='balanced'` in models or SMOTE oversampling to prevent bias toward predicting No Diabetes by default
+**- Handle class imbalance** - use `class\_weight='balanced'` in models or SMOTE oversampling to prevent bias toward predicting No Diabetes by default
 
 ## 📚 Dataset Information
 
@@ -135,7 +135,7 @@ Insulin	| 2-hour serum insulin (mu U/ml)
 BMI	| Body mass index (weight in kg / height in m²)
 DiabetesPedigreeFunction |	Diabetes pedigree function (genetic risk score)
 Age	| Age in years
-Outcome | Target — 1 = Diabetic, 0 = Non-diabetic
+Outcome | Target - 1 = Diabetic, 0 = Non-diabetic
 
 ## 👤 Author
-**Learning Data Science** — A project from my structured Data Science learning journey.
+**Learning Data Science** - A project from my structured Data Science learning journey.
